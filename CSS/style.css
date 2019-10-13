@@ -4,6 +4,13 @@ body{
   background: black;
 }
 
+.bb{
+  font:15px/1.5 Georgia, Helvetica, sans-serif;
+  margin:0;
+  background:url('../img/bb.png');
+  background-size:10% 10%;
+}
+
 .container{
   width: 95%;
   margin:auto;
