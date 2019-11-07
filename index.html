@@ -6,9 +6,14 @@
     <meta name="author" content="Jordan Valentine">
     <title>Dig Through Time | Home</title>
     <link rel="stylesheet" href="./CSS/style.css">
+      <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.min.css">
     <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico" />
+      <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	  <script src="jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+      <script src="javascript.js"></script>
   </head>
   <body>
+    <main>
     <header>
       <div class="container">
         <!-- Heading -->
@@ -34,6 +39,8 @@
       </div>
     </header>
 
+
+
     <!-- Point of the Website -->
 
     <section id="showcase">
@@ -47,6 +54,8 @@
 
     <!-- About Page -->
 
+
+
     <section id="about">
       <div>
         <h2>About Us</h2>
@@ -58,14 +67,18 @@
           <a href="https://www.instagram.com/floridafossils/"target="_blank">
             <img src="./img/jon.png">
           </a>
-          <h3>Jonathan Valentine</h3>
-          <p>Jonathan Valentine was a biologist with the US Fish & Wildlife
+          <div id="accordion">
+            <h3>Jonathan Valentine</h3>
+            <div>
+              <p>Jonathan Valentine was a biologist with the US Fish & Wildlife
             Service at Pelican Island National Wildlife Refuge before founding
             American Boneyard and Dig Through Time. Jonathan is a recent graduate from USF and previously
             served as the President for USF’s Geology Club for two years. His past research
             before joining the refuge system concerned conservational paleo-biology and topics
             revolving around anthropogenic influences and socio-ecology. Check out his social media
             accounts where he posts about his adventures.</p>
+          </div>
+        </div>
           <ul>
             <li><a href="https://twitter.com/BoneyardAmerica"target="_blank"><img src="./img/twitter.png"></a></li>
             <li><a href="https://www.instagram.com/floridafossils/"target="_blank"><img src="./img/insta.png"></a></li>
@@ -92,10 +105,12 @@
         </div>
       </div>
     </aside>
-
+  </main>
     <footer>
       <p>Dig Through Time, Copyright &copy; 2019</p>
     </footer>
+
+    <script src="javascript.js"></script>
 
   </body>
 </html>
