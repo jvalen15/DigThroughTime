@@ -230,15 +230,9 @@ aside#sidebar{
   height: 100%;
 }
 
-aside#sidebar img{
-  display:inline-block;
-  height: 200px;
-  width: 200px;
-}
-
 aside#sidebar ul img{
-  height: 100px;
-  width: 100px;
+  height: 50px;
+  width: 50px;
 }
 
 aside#sidebar li{
@@ -250,6 +244,13 @@ aside#sidebar li{
 aside h1, aside h2, aside h3, aside p{
   font-size: 250%;
 }
+
+aside#sidebar p img
+{
+  height: 250px;
+  width: 250px;
+}
+
 
 
 /*Blog Post styling*/
