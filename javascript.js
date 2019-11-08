@@ -27,14 +27,9 @@ $(document).ready(function() {
 
     document.getElementById("date").innerHTML = today;
 
-
-
-
-
-
-
-
 });
+
+// Jquery plugin to slideshow
 
 $(document).ready(function() {
 
@@ -82,5 +77,20 @@ $(document).ready(function() {
 
 },6000);
 
+  });
+
+// Fade Header when scrolling and chain plugin to shrink header
+
+$(document).ready(function() {
+
+  $(window).on('scroll', function() {
+    var header = $("#header");
+    if ($(this).scrollTop() > 50) {
+        if (!header.data('faded')) header.data('faded', 1).stop(true).fadeTo(400, 0.5).animate({ height:'30px', queue: false},600);
+    } else if (header.data('faded')) {
+        header.data('faded', 0).stop(true).fadeTo(400, 1).animate({ height:'40px', queue: false},600);
+    }
 
   });
+
+});
