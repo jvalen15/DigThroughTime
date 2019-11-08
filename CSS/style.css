@@ -39,6 +39,7 @@ ul{
   margin-top: 10px;
   margin-bottom: 10px;
   text-align: center;
+  width:auto;
 }
 
 /*Header styling*/
@@ -68,8 +69,7 @@ header img{
 }
 
 header li{
-  float:left;
-  display:inline;
+  display:inline-block;
   padding: 0 20px 0 20px;
 }
 
@@ -85,9 +85,10 @@ header #branding h1{
 }
 
 header .middle{
-  float: right;
-  margin-top: 5px;
-  margin-right: 230px;
+  list-style: none;
+  padding: 0;
+  width: 600px;
+  margin: 0 auto;
 }
 header .right{
   float: right;
@@ -219,63 +220,36 @@ header a:hover{
   font-size: 300%;
 }
 
-.dark img{
-  height: 500px;
-  width: 500px;
-  align: center;
+.dark{
+  height: calc(100% / 4);
 }
 
 aside#sidebar{
-
   width: 100%;
-  margin-top: 10px;
-}
-
-aside#sidebar2{
-  float: right;
-  width: 100%;
-  margin-top: 10px;
+  height: 100%;
 }
 
 aside#sidebar img{
-  float: left;
-}
-
-aside#sidebar2 img{
-  float: right;
-}
-
-aside#sidebar ul img{
-  height: 100px;
+  display:inline-block;
+  height: 200px;
   width: 200px;
 }
 
-aside#sidebar2 ul img{
+aside#sidebar ul img{
   height: 100px;
   width: 100px;
 }
 
 aside#sidebar li{
-
-  display:inline;
-  padding: 0 20px 0 20px;
-  display:inline-block;
-}
-
-aside#sidebar2 li{
-
   display:inline;
   padding: 0 20px 0 20px;
   display:inline-block;
 }
 
 aside h1, aside h2, aside h3, aside p{
-  font-size: 200%;
+  font-size: 250%;
 }
 
-aside h3{
-  margin-top: 0px;
-}
 
 /*Blog Post styling*/
 
@@ -362,7 +336,7 @@ footer{
 
 
 
-  aside#sidebar2{
+  aside#sidebar{
     position: relative;
     text-align: center;
     float: none;
