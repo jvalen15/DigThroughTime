@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="Jordan Valentine">
+    <title>Dig Through Time | Adventures</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico" />
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+      <script src="javascript.js"></script>
+  </head>
+  <body class="bb">
+    <header id="header">
+      <div class="container">
+        <div id="branding">
+          <h1><span class="highlight"><a href="index.html">Dig Through Time</span></h1>
+        </div>
+
+        <nav class="right">
+          <ul>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Sign Up</a></li>
+          </ul>
+        </nav>
+
+        <nav class="middle">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="adventures.html">Adventures</a></li>
+            <li><a href="fanatics.html">Fanatics</a></li>
+            <li class ="current"><a href="contactus.html">Contact Us</a></li>
+          </ul>
+        </nav>
+
+      </div>
+    </header>
+
+    <section id="showcase-2">
+      <div class="container">
+        <h3>Today's Date is:</h3>
+        <p id="date"></p>
+        <h1>Contact Us</h1>
+        <script src="javascript.js"></script>
+      </div>
+    </section>
+
+    <aside id="sidebar2">
+          <div class="dark">
+            <h3>Contact Us</h3>
+            <form class="quote" method="post" action="https://formspree.io/jvalen15@uncc.edu">
+  						<div>
+  							<label>Name</label><br>
+  							<input type="text" name="Name" placeholder="Name" required>
+  						</div>
+  						<div>
+  							<label>Email</label><br>
+  							<input type="email"name="Email" placeholder="Email Address" required>
+  						</div>
+  						<div>
+  							<label>Message</label><br>
+  							<textarea placeholder="Message"name="Suggestion" maxlength="500"></textarea>
+  						</div>
+  						<button class="button_2" type="submit">Send</button>
+					</form>
+
+          <script>
+            function joke(){
+
+            $.getJSON("https://api.myjson.com/bins/1fiayq", function(json) {
+
+                  console.log(json[0].id); // this will show the info it in firebug console
+
+                  var ran = Math.floor(Math.random() * 383);
+
+                  var x = document.getElementById("question");
+                  var z = document.getElementById("joke");
+
+                  x.innerHTML = json[ran].setup;
+                  z.innerHTML = json[ran].punchline;
+
+                });
+
+              }
+          </script>
+
+          <h3>Do you want to hear a joke?</h3>
+          <button class="button_2" type="submit" onClick="joke()">Joke Button</button>
+          <p id="question"></p>
+          <p id="joke"></p>
+
+
+          </div>
+        </aside>
+
+<footer>
+  <h5>Dig Through Time, Copyright &copy; 2019</h5>
+</footer>
+
+  </body>
+</html>

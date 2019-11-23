@@ -94,3 +94,43 @@ $(document).ready(function() {
   });
 
 });
+
+$(document).ready(function() {
+
+  $.getJSON("https://api.myjson.com/bins/15x0eq", function(json) {
+
+	    	console.log(json.About[0].image); // this will show the info it in firebug console
+
+				var x = document.getElementById("jontitle");
+				var z = document.getElementById("para");
+				var img = document.getElementById("jonimg");
+
+				x.innerHTML = json.About[0].title;
+				z.innerHTML = json.About[0].text;
+
+				img.src = json.About[0].image;
+
+			});
+});
+
+$(document).ready(function() {
+
+  function joke(){
+
+  $.getJSON("https://api.myjson.com/bins/1fiayq", function(json) {
+
+	    	console.log(json[0].id); // this will show the info it in firebug console
+
+        var ran = Math.floor(Math.random() * 383);
+
+				var x = document.getElementById("question");
+				var z = document.getElementById("joke");
+
+				x.innerHTML = json[ran].setup;
+				z.innerHTML = json[ran].punchline;
+
+			});
+
+    }
+
+});
