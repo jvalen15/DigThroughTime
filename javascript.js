@@ -86,7 +86,7 @@ $(document).ready(function() {
   $(window).on('scroll', function() {
     var header = $("#header");
     if ($(this).scrollTop() > 50) {
-        if (!header.data('faded')) header.data('faded', 1).stop(true).fadeTo(400, 0.5).animate({ height:'30px', queue: false},600);
+        if (!header.data('faded')) header.data('faded', 1).stop(true).fadeTo(400, 0.2).animate({ height:'30px', queue: false},600);
     } else if (header.data('faded')) {
         header.data('faded', 0).stop(true).fadeTo(400, 1).animate({ height:'40px', queue: false},600);
     }
@@ -132,5 +132,50 @@ $(document).ready(function() {
 			});
 
     }
+
+});
+
+$(document).ready(function() {
+
+        // get the image URL and caption for each image
+
+        var pics = [
+          ['./images/gator.jpg'],
+          ['./images/sand.jpg'],
+          ['./images/shell.jpg']
+        ]
+
+        var count = pics.length;
+        var cur = 1;
+
+        // preload the image for each link
+
+        var $imgs = new Array();
+        for (var i =0; i < count - 1; i++){
+          var $image = $("<img>").attr('src', pics[i]);
+          $imgs.push($('<img>').attr('src', pics[i]));
+        }
+
+        // set up the event handlers for each link
+
+        $(".ayy").click(function(evt){
+
+          event.preventDefault();
+
+          $("#image1").fadeOut(1000, function(){
+            document.getElementById("image1").src = image;
+            $("#image1").fadeIn(1000);
+          });
+
+          $("#caption1").fadeOut(1000, function(){
+            document.getElementById("caption1").innerHTML = title;
+            $("#caption1").fadeIn(1000);
+          });
+
+          var image = $(this).attr("href");
+
+          var title = $(this).attr("title");
+
+        });
 
 });
