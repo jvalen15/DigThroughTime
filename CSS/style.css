@@ -145,7 +145,7 @@ header a:hover{
 
 #showcase h2{
   margin-top: 150px;
-  font-size: 20px;
+  font-size: 40px;
   margin-bottom:0px;
   color: #cfcfcf;
   text-shadow: -10px 10px 0px #708090,
@@ -174,11 +174,12 @@ header a:hover{
 }
 
 #showcase-2{
-  min-height:400px;
+  min-height:500px;
   background:url('../img/sand.jpg') no-repeat;
   background-size:100% 100%;
   text-align: center;
   color: #ffffff;
+  margin-bottom: 50px;
 }
 
 
@@ -283,11 +284,22 @@ aside#sidebar p img
   width: 50%;
 }
 
+.posts p{
+  text-align: center;
+}
+
 
 .fakeimg {
   background-color: #aaa;
   width: 90%;
   padding: 20px;
+}
+
+.fakeimg img{
+  height: 350px;
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .post {
