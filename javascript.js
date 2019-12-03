@@ -97,7 +97,7 @@ $(document).ready(function() {
 
 $(document).ready(function() {
 
-  $.getJSON("https://api.myjson.com/bins/15x0eq", function(json) {
+  $.getJSON("https://api.myjson.com/bins/1fqvlu", function(json) {
 
 	    	console.log(json.About[0].image); // this will show the info it in firebug console
 
