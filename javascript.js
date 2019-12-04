@@ -86,7 +86,7 @@ $(document).ready(function() {
   $(window).on('scroll', function() {
     var header = $("#header");
     if ($(this).scrollTop() > 50) {
-        if (!header.data('faded')) header.data('faded', 1).stop(true).fadeTo(400, 0.2).animate({ height:'30px', queue: false},600);
+        if (!header.data('faded')) header.data('faded', 1).stop(true).fadeTo(400, 0.1).animate({ height:'25px', queue: false},600);
     } else if (header.data('faded')) {
         header.data('faded', 0).stop(true).fadeTo(400, 1).animate({ height:'40px', queue: false},600);
     }
@@ -140,9 +140,23 @@ $(document).ready(function() {
         // get the image URL and caption for each image
 
         var pics = [
-          ['./images/gator.jpg'],
-          ['./images/sand.jpg'],
-          ['./images/shell.jpg']
+          ['./images/1.jpg'],
+          ['./images/2.jpg'],
+          ['./images/3.jpg'],
+          ['./images/4.jpg'],
+          ['./images/7.jpg'],
+          ['./images/8.jpg'],
+          ['./images/9.jpg'],
+          ['./images/10.jpg'],
+          ['./images/11.jpg'],
+          ['./images/12.JPG'],
+          ['./images/13.JPG'],
+          ['./images/14.jpg'],
+          ['./images/16.jpg'],
+          ['./images/17.jpg'],
+          ['./images/18.jpg'],
+          ['./images/19.JPG'],
+          ['./images/20.jpg'],
         ]
 
         var count = pics.length;
